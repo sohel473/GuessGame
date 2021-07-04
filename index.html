@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/litera/bootstrap.min.css"
+        integrity="sha384-Gr51humlTz50RfCwdBYgT+XvbSZqkm8Loa5nWlNrvUqCinoe6C6WUZKHS2WIRx5o" crossorigin="anonymous">
+  <title>Guess Game</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+
+      <h2 class="display-4">Try and guess a number between 1 and 10</h2>
+      <h3 class="display-5">You have 3 chances to guess the correct number</h3>
+
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="text" class="sr-only">Pick a Number</label>
+          <input type="text" readonly class="form-control-plaintext" id="text" value="Pick a Number">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="number" class="sr-only">Number</label>
+          <input type="number"  class="form-control" id="number">
+        </div>
+        <button id="guess" type="submit" class="btn btn-success mb-2">Guess</button>
+      </form>
+
+      <p class="lead">Number of Chances: <span id="chance">3</span></p>
+      <p class="lead">Hint: <span id="hint" class="p-3 mb-2 text-danger"></span></p>
+      <p class="lead">Result: <span id="result" class="p-3 mb-2 text-success"></span></p>
+
+      <button id="restart" type="button" class="btn btn-primary btn-lg btn-block">Restart</button>
+    </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
